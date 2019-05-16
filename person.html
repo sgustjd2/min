@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Servlet</title>
+		<style type="text/css">
+			body{
+				background : rgb(211, 244, 250);
+				font-family : "Comic Sans MS", cursive, sans-serif;
+				align-content: center;
+			}
+			table{
+				color: black; 
+				background-image: url(images/a0edac82e3b4939419bb86989496d0c089.jpg);
+				font-family: "고딕";
+			}
+			form{
+				method = post;
+				action = "";
+				align = center
+			}
+			input[type=text] {
+			  width: 50%;
+			  -webkit-transition: width .35s ease-in-out;
+			  transition: width .35s ease-in-out;
+			}
+			input[type=text]:focus {
+ 			 width: 99%;
+			}
+			input[type=number] {
+			  width: 50%;
+			  -webkit-transition: width .35s ease-in-out;
+			  transition: width .35s ease-in-out;
+			}
+			input[type=number]:focus {
+ 			 width: 99%;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 align = center> Servlet 폼 데이터 처리</h2>
+		<table border = "2" align = center>
+			<form>
+			<tr>
+				<td align = center>이름 :</td>
+				<td> <input type="text" name = name maxlength = 10 autofocus> </td>
+			</tr>
+			<tr>
+				<td align = center>나이 :</td>
+				<td><input type="number" name= age maxlength=3 > </td>
+			</tr>
+			<tr>
+				<td align = center>성별 :</td>
+				<td><label><input type = "radio" name = gender value=1> 남자</label>
+								<label><input type = "radio" name = gender value=2> 여자 </label></td>
+			</tr>
+			<tr>
+				<td align = center>취미 :</td>
+				<td><label><input type = "checkbox" name = hobby value =1> 축구</label>
+								<label><input type = "checkbox" name = hobby value =2> 야구</label>
+								<label><input type = "checkbox" name = hobby value =3> 농구</label>
+								<label><input type = "checkbox" name = hobby value =4> 배구</label>	</td>
+			</tr>
+			<tr>
+				<td align = center colspan=2>		<input type = submit value = 전송>
+																<input type = reset value = 취소></td>
+			</tr>
+			</form>
+		</table>
+	</body>
+</html>
