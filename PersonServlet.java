@@ -14,7 +14,6 @@ public class PersonServlet extends HttpServlet {
 		String name = req.getParameter( "name" );
 		int age = Integer.parseInt(req.getParameter( "age" ));
 		String gender = req.getParameter( "gender" );
-		
 		resp.setContentType(  "text/html; charset = utf-8 ");
 		PrintWriter out = resp.getWriter();
 		 
@@ -26,7 +25,7 @@ public class PersonServlet extends HttpServlet {
 		out.println(		"<h2> Servlet 폼데이터 처리 </h2>");
 		out.println(		"당신의 이름은" + name + "이고<br>");
 		out.println(		"나이는" +  age + "살이고<br>");
-		out.println(		"성별은" + gender + "입니다<br>");
+		out.println(		"성별은" +(gender.equals("1") ? "남자" : "여자" ) + "입니다<br>");
 		out.println(	"</body>");
 		out.println("</html");
 	
